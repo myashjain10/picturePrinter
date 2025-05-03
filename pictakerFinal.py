@@ -65,8 +65,21 @@ def countdown(n):
     countdown_text = ""
     capturing = True
 
-def print_image():
-    print("sent to print")
+def print_image(image_path):
+    print("Sent to printer")
+#     hDC = win32ui.CreateDC()  # Create a device context object
+#     hDC.CreatePrinterDC(win32print.GetDefaultPrinter())  # Set the default printer
+#     bmp = Image.open(image_path)  # Open the image using PIL
+
+#     # Set image size and position for printing
+#     printable_area = hDC.GetDeviceCaps(8), hDC.GetDeviceCaps(10)  # Get printable area dimensions
+#     bmp = bmp.resize(printable_area)  # Resize the image to fit the printable area
+#     dib = ImageWin.Dib(bmp)  # Convert the image to a device-independent bitmap (DIB)
+#     dib.draw(hDC.GetHandleOutput(), (0, 0, bmp.size[0], bmp.size[1]))  # Draw the DIB on the printer device context
+
+#     hDC.EndPage()  # End the current page
+#     hDC.EndDoc()  # End the print job
+#     hDC.DeleteDC()  # Delete the device context
 
 def retake_image():
     global capturing, result
